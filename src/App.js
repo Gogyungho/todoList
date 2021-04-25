@@ -6,6 +6,9 @@ import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
 import TodoCreate from "./components/TodoCreate";
 import { TodoProvider } from "./components/TodoContext";
+import BarGraph from "./BarGraph";
+import BouncingBall from './BouncingBall';
+import MyTutoring from './MyTutoring';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -14,14 +17,17 @@ body {
 `;
 function App() {
   return (
-    <TodoProvider>
-    <GlobalStyle />
-    <TodoTemplate>
-      <TodoHead />
-      <TodoList />
-      <TodoCreate/>
-    </TodoTemplate>
-    </TodoProvider>
+    <MyTutoring />
+    // <BouncingBall />
+    // <BarGraph />
+    // <TodoProvider>
+    // <GlobalStyle />
+    // <TodoTemplate>
+    //   <TodoHead />
+    //   <TodoList />
+    //   <TodoCreate/>
+    // </TodoTemplate>
+    // </TodoProvider>
   );
 }
 
